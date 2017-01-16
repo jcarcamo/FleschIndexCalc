@@ -13,7 +13,7 @@ def count_syllables(word):
 def get_fi(syllables_count, words_count, sentences_count):
     return 206.835 - 84.6*(syllables_count/words_count) - 1.015*(words_count/sentences_count)
 
-f = open('NYTimes.txt', 'r')
+f = open('../data/NYTimes.txt', 'r')
 whole_text = f.read()#.decode('string_escape')
 #whole_text = ' '.join(unicode(whole_text, 'utf-8').splitlines())
 whole_text = whole_text.replace('\r',' ').replace('\n',' ').strip()
